@@ -1,1 +1,55 @@
-<p>navbar works!</p>
+<header class="bg-white/95 backdrop-blur sticky top-0 z-50 border-b border-slate-200 shadow-sm">
+  <div class="max-w-7xl mx-auto flex flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between md:px-6">
+    <div class="flex items-center justify-between">
+      <a routerLink="/home" class="flex items-center gap-3">
+        <div
+          class="h-12 w-12 rounded-3xl overflow-hidden bg-white shadow-[0_20px_50px_-30px_rgba(14,165,233,0.45)] flex items-center justify-center">
+          <img src="/assets/logo.png" alt="Inflables Fiesta logo" class="h-full w-full object-cover" />
+        </div>
+        <div>
+          <p
+            class="text-sm uppercase tracking-[0.3em] bg-gradient-to-r from-sky-500 via-fuchsia-500 to-amber-400 bg-clip-text text-transparent">
+            La Maeta</p>
+          <h1
+            class="text-xl font-semibold bg-gradient-to-r from-sky-500 via-fuchsia-500 to-amber-400 bg-clip-text text-transparent">
+            Inflables</h1>
+        </div>
+      </a>
+      <button type="button"
+        class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/90 p-2 text-slate-700 shadow-sm md:hidden"
+        (click)="menuOpen = !menuOpen" aria-label="Abrir menú móvil">
+        <svg *ngIf="!menuOpen" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg *ngIf="menuOpen" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+      <a routerLink="/home" class="transition hover:text-slate-900">Inicio</a>
+      <a routerLink="/rental" class="transition hover:text-slate-900">Inflables</a>
+      <a routerLink="/contact" class="transition hover:text-slate-900">Contacto</a>
+    </nav>
+
+    <a routerLink="/rental"
+      class="inline-flex w-full justify-center items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-300/30 hover:from-sky-600 hover:to-cyan-600 transition md:w-auto">
+      Reserva ahora
+    </a>
+  </div>
+
+  <div *ngIf="menuOpen" class="space-y-3 border-t border-slate-200 bg-white/95 p-4 shadow-sm md:hidden">
+    <a routerLink="/home"
+      class="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+      (click)="menuOpen = false">Inicio</a>
+    <a routerLink="/rental"
+      class="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+      (click)="menuOpen = false">Inflables</a>
+    <a routerLink="/contact"
+      class="block rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+      (click)="menuOpen = false">Contacto</a>
+  </div>
+</header>
