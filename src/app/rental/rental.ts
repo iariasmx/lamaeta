@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf, NgClass } from '@angular/common';
 import { Products } from '../data/products';
 
 @Component({
   selector: 'rental',
-  imports: [NgFor],
+  imports: [NgFor, NgIf, NgClass],
   templateUrl: './rental.html',
   styleUrls: ['./rental.css']
 })
@@ -23,5 +23,25 @@ export class RentalComponent {
 
   trackByProduct(index: number, product: any) {
     return product.id;
+  }
+
+  getCategoryColor(category: string): string {
+    const colors: { [key: string]: string } = {
+      piscina: 'from-sky-400 to-blue-600',
+      rescate: 'from-orange-400 to-red-600',
+      acuatico: 'from-cyan-400 to-emerald-600',
+      familiar: 'from-fuchsia-400 to-pink-600'
+    };
+    return colors[category] || 'from-slate-400 to-slate-600';
+  }
+
+  getCategoryBadge(category: string): string {
+    const colors: { [key: string]: string } = {
+      piscina: 'bg-sky-100 text-sky-700 border-sky-200',
+      rescate: 'bg-orange-100 text-orange-700 border-orange-200',
+      acuatico: 'bg-emerald-100 text-emerald-700 border-emerald-200',
+      familiar: 'bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200'
+    };
+    return colors[category] || 'bg-slate-100 text-slate-700 border-slate-200';
   }
 }
