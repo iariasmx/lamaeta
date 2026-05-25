@@ -10,16 +10,18 @@
     class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(236,72,153,0.2),_transparent_25%),radial-gradient(circle_at_bottom_right,_rgba(34,211,238,0.18),_transparent_28%),radial-gradient(circle_at_center,_rgba(250,204,21,0.16),_transparent_50%)]">
   </div>
 
-  <div class="relative max-w-7xl mx-auto px-4 py-16 lg:px-8">
-    <div class="flex w-full flex-col items-center justify-center gap-6 text-center mb-16">
+  <div class="relative max-w-7xl mx-auto px-4 py-8 md:py-16 lg:px-8">
+    <div class="flex w-full flex-col items-center justify-center gap-6 text-center mb-12 md:mb-16">
       <div class="max-w-3xl">
-        <p class="text-sm uppercase tracking-[0.4em] font-bold text-fuchsia-600">Sobre Nosotros</p>
-        <h1 class="mt-4 text-5xl sm:text-7xl font-extrabold tracking-tight">
+        <p class="text-[10px] md:text-sm uppercase tracking-[0.3em] md:tracking-[0.4em] font-bold text-fuchsia-600">
+          Sobre Nosotros</p>
+        <h1 class="mt-4 text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight">
           <span class="bg-gradient-to-r from-sky-600 via-fuchsia-600 to-orange-500 bg-clip-text text-transparent">
             Nuestra Misión
           </span>
         </h1>
-        <p class="mt-6 text-xl leading-8 text-slate-700 font-medium">En Inflables Fiesta, nos dedicamos a llevar alegría
+        <p class="mt-4 md:mt-6 text-lg md:text-xl leading-relaxed md:leading-8 text-slate-700 font-medium px-4">En
+          Inflables Fiesta, nos dedicamos a llevar alegría
           y diversión
           segura a cada evento, garantizando la mejor experiencia para las familias.</p>
       </div>
@@ -27,27 +29,29 @@
 
     <!-- Sección de Ubicación del Servicio -->
     <div
-      class="relative overflow-hidden rounded-[3.5rem] bg-white/70 backdrop-blur-md p-8 sm:p-12 shadow-[0_40px_100px_-40px_rgba(15,23,42,0.3)] ring-1 ring-white/50 mb-16">
+      class="relative overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] bg-white/70 backdrop-blur-md p-6 sm:p-12 shadow-[0_30px_60px_-20px_rgba(15,23,42,0.3)] md:shadow-[0_40px_100px_-40px_rgba(15,23,42,0.3)] ring-1 ring-white/50 mb-12 md:mb-16">
       <div class="absolute -right-20 top-0 h-40 w-40 rounded-full bg-sky-300 opacity-40 blur-3xl"></div>
       <div class="absolute -left-20 bottom-0 h-40 w-40 rounded-full bg-amber-300 opacity-40 blur-3xl"></div>
 
-      <div class="grid gap-16 lg:grid-cols-2 items-center">
-        <div class="space-y-8">
+      <div class="grid gap-10 md:gap-16 lg:grid-cols-2 items-center">
+        <div class="space-y-6 md:space-y-8">
           <div>
             <span
-              class="inline-flex rounded-full bg-gradient-to-r from-sky-500 via-cyan-500 to-emerald-400 px-6 py-2 text-sm font-bold text-white shadow-lg shadow-sky-200/50 uppercase tracking-wider">Cobertura</span>
-            <h2 class="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">¿Dónde llevamos la
+              class="inline-flex rounded-full bg-gradient-to-r from-sky-500 via-cyan-500 to-emerald-400 px-4 md:px-6 py-1.5 md:py-2 text-[10px] md:text-sm font-bold text-white shadow-lg shadow-sky-200/50 uppercase tracking-wider">Cobertura</span>
+            <h2 class="mt-4 md:mt-6 text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
+              ¿Dónde llevamos la
               diversión?</h2>
           </div>
-          <p class="text-lg leading-8 text-slate-700">Cubrimos toda el área metropolitana y alrededores, con un equipo
+          <p class="text-base md:text-lg leading-relaxed md:leading-8 text-slate-700">Cubrimos toda el área
+            metropolitana y alrededores, con un equipo
             comprometido con la puntualidad y la sonrisa de tus pequeños.</p>
 
-          <div class="grid gap-4">
+          <div class="grid gap-3 md:gap-4">
             <div
-              class="group flex items-center gap-4 rounded-3xl bg-white/80 p-4 shadow-sm transition hover:shadow-md ring-1 ring-slate-100">
+              class="group flex items-center gap-3 md:gap-4 rounded-[1.5rem] md:rounded-3xl bg-white/80 p-3 md:p-4 shadow-sm transition hover:shadow-md ring-1 ring-slate-100">
               <div
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-blue-500 text-white shadow-lg shadow-sky-200">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl md:rounded-2xl bg-gradient-to-br from-sky-400 to-blue-500 text-white shadow-lg shadow-sky-200">
+                <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -55,15 +59,15 @@
                 </svg>
               </div>
               <div>
-                <p class="font-bold text-slate-900">Zona Norte</p>
-                <p class="text-sm text-slate-600">Entregas programadas sin costo adicional.</p>
+                <p class="text-sm md:text-base font-bold text-slate-900">Lerma</p>
+                <p class="text-xs md:text-sm text-slate-600">Centro, Zona Industrial, El cerrillo y màs.</p>
               </div>
             </div>
             <div
-              class="group flex items-center gap-4 rounded-3xl bg-white/80 p-4 shadow-sm transition hover:shadow-md ring-1 ring-slate-100">
+              class="group flex items-center gap-3 md:gap-4 rounded-[1.5rem] md:rounded-3xl bg-white/80 p-3 md:p-4 shadow-sm transition hover:shadow-md ring-1 ring-slate-100">
               <div
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-400 to-pink-500 text-white shadow-lg shadow-fuchsia-200">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl md:rounded-2xl bg-gradient-to-br from-fuchsia-400 to-pink-500 text-white shadow-lg shadow-fuchsia-200">
+                <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -71,15 +75,15 @@
                 </svg>
               </div>
               <div>
-                <p class="font-bold text-slate-900">Zona Centro y Sur</p>
-                <p class="text-sm text-slate-600">Cobertura total para eventos familiares.</p>
+                <p class="text-sm md:text-base font-bold text-slate-900">Toluca, Metepec y San Mateo Atenco</p>
+                <p class="text-xs md:text-sm text-slate-600">Zonas Residenciales y Área Conurvada.</p>
               </div>
             </div>
             <div
-              class="group flex items-center gap-4 rounded-3xl bg-white/80 p-4 shadow-sm transition hover:shadow-md ring-1 ring-slate-100">
+              class="group flex items-center gap-3 md:gap-4 rounded-[1.5rem] md:rounded-3xl bg-white/80 p-3 md:p-4 shadow-sm transition hover:shadow-md ring-1 ring-slate-100">
               <div
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg shadow-amber-200">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                class="flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-xl md:rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg shadow-amber-200">
+                <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -87,17 +91,19 @@
                 </svg>
               </div>
               <div>
-                <p class="font-bold text-slate-900">Áreas Periféricas</p>
-                <p class="text-sm text-slate-600">Consultar disponibilidad y cargos de envío.</p>
+                <p class="text-sm md:text-base font-bold text-slate-900">Áreas Periféricas</p>
+                <p class="text-xs md:text-sm text-slate-600">Consultar disponibilidad, podría aplicar cargos adicionales
+                  por distancia.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="relative">
           <div
-            class="absolute -inset-4 rounded-[3rem] bg-gradient-to-tr from-sky-400 via-fuchsia-400 to-amber-400 opacity-20 blur-2xl">
+            class="absolute -inset-4 rounded-[2rem] md:rounded-[3rem] bg-gradient-to-tr from-sky-400 via-fuchsia-400 to-amber-400 opacity-20 blur-2xl">
           </div>
-          <div class="relative rounded-[2.5rem] bg-white p-3 shadow-2xl ring-1 ring-slate-200 overflow-hidden">
+          <div
+            class="relative rounded-[1.8rem] md:rounded-[2.5rem] bg-white p-2 md:p-3 shadow-2xl ring-1 ring-slate-200 overflow-hidden">
             <!-- Google Maps de Lerma de Villada -->
             <div class="aspect-video rounded-[2rem] overflow-hidden border-4 border-slate-50">
               <iframe
